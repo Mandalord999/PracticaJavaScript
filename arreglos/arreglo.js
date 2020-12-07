@@ -13,9 +13,26 @@ document.write(amigos.length + " ");
 var cadenaTexto = amigos.join(" - ");
 document.write(cadenaTexto);
 
-console.log (arreglo);
+// Metodo Pop y Push
+//    amigos.pop();
+//    console.log (amigos);
+//    amigos.push("Pamela");
+//    console.log (amigos);
 
-console.log (amigos);
+// Metodo shift y unshift
+//    amigos.shift();
+//    amigos.unshift("Oscar");
+//    console.log(amigos);
+
+// Metodo concat
+//    var amigos2 = ["felipe" , "Oscar"];
+//    var todosMisAmigos = amigos.concat(amigos2);
+//    console.log(todosMisAmigos);
+
+// Metodo sort y reverse
+// amigos.sort (); Ordena el arreglo solo texto de forma alfabetica, no numeros
+amigos.reverse();
+console.log(amigos);
 
 
 
