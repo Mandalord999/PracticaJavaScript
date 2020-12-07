@@ -2,16 +2,18 @@
 // var amigos = [ 'Carlos' , 'Arturo' , 'Cesar' , 123 , true];
 
 var meses = ['Enero' , 'Febrero' , 'Marzo' , 'Abril' , 'Mayo' , 'Junio' , 'Julio' , 'Agosto' , 'Septiembre' , 'Octubre' , 'Noviembre' , 'Diciembre'];
- 
-var amigos = [];
-amigos[0] = "Alejandro";
-amigos[1] = "Matias";
-amigos[2] = "Carola";
-amigos[3] = "Camila";
+ // document.write (meses [3]);
 
-// document.write (meses [3]);
+var amigos = ["Alejandro" , "Matias" , "Carola" , "Camila"];
 
-console.log (meses);
+// Metodo length
+document.write(amigos.length + " ");
+
+// Metodo Join
+var cadenaTexto = amigos.join(" - ");
+document.write(cadenaTexto);
+
+console.log (arreglo);
 
 console.log (amigos);
 
