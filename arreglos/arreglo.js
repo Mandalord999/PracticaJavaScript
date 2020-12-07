@@ -31,8 +31,8 @@ document.write(cadenaTexto);
 
 // Metodo sort y reverse
 // amigos.sort (); Ordena el arreglo solo texto de forma alfabetica, no numeros
-amigos.reverse();
-console.log(amigos);
+// amigos.reverse();
+// onsole.log(amigos);
 
 
 
