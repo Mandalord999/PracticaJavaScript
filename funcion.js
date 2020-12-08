@@ -5,6 +5,6 @@
 
 function suma (numero1,numero2){
     var resultado = numero1 + numero2;
-    document.write(resultado);
+    return resultado;
 }
-suma(2,3);
+document.write(suma(2,3));
