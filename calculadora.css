@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #ffd4d4;
+    color: azure;
+}
+
+.contenedor{
+    width: 300px;
+    margin: 20px auto;
+    background: #2abb06;
+    padding: 20px;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+input[type="text"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+form .btn{
+    width: 100%;
+    background: #07006b;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
