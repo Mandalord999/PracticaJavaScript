@@ -21,9 +21,12 @@
 var cajas = document.getElementsByClassName('caja');
 
 function color(){
-    cajas[0].classList.toggle('amarillo');
+    // cajas[0].classList.toggle('amarillo');
+    this.classList.toggle('amarillo');
 }
 
-cajas[0].addEventListener('click' , color);
+// cajas[0].addEventListener('click' , color);
 
-
+for (var i = 0; i < cajas.length;i++){
+    cajas[i].addEventListener('click' , color);
+}
