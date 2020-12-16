@@ -6,10 +6,10 @@ var terminos = formulario.terminos;
 function validar(e){
 
     // Valimadmos el nombre
-    if(nombre.length > 18){
+    if(nombre.value > 18){
         alert('Maximo de caracteres permitidos');
         
-    }else if(nombre.value == ''){
+    } else if (nombre.value == ''){
         alert('Por favor ingresa un nombre');
 
     }
