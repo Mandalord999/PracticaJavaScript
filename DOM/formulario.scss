@@ -60,12 +60,13 @@ body{
             .terminos{
                 text-align: center;
                 color: #424242;
+                margin: 20px 0;
                 label{
                     margin-left: 10px;
                 }
             }
             .error{
-                // display: none;
+                display: none;
                 margin-top: 20px;
                 border-radius: 3px;
                 background: #45b34e;

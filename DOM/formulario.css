@@ -78,6 +78,7 @@ body .contenedor .formulario .label-radio {
 body .contenedor .formulario .terminos {
   text-align: center;
   color: #424242;
+  margin: 20px 0;
 }
 
 body .contenedor .formulario .terminos label {
@@ -85,6 +86,7 @@ body .contenedor .formulario .terminos label {
 }
 
 body .contenedor .formulario .error {
+  display: none;
   margin-top: 20px;
   border-radius: 3px;
   background: #45b34e;

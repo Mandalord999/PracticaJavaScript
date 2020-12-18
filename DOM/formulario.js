@@ -1,39 +1,66 @@
-var formulario = document.getElementById('formulario');
-var nombre = formulario.nombre;
-var sexo = formulario.sexo;
-var terminos = formulario.terminos;
-
-function validar(e){
-
-    // Valimadmos el nombre
-    if(nombre.value > 18){
-        alert('Maximo de caracteres permitidos');
-        
-    } else if (nombre.value == ''){
-        alert('Por favor ingresa un nombre');
-
-    }
-    // Validamos los radio button
-    if (sexo[0].checked == false && sexo [1].checked == false){
-        alert('Por favor ingresa un sexo');
-    }
-
-    // Validamos los terminos y condiciones
-
-    if (!terminos.checked){
-        alert('Acepta los terminos');
-
-    }
+(function(){
+    var formulario = document.getElementById('formulario'),
+        nombre = formulario.nombre,
+        correo = formulario.correo,
+        sexo = formulario.sexo,
+        terminos = formulario.terminos,
+        error = document.getElementById('error');
     
+    function validarNombre(e){
+        // Valimadmos el nombre
+       if (nombre.value == '' || nombre.value == null){
+            // alert('Por favor ingresa un nombre');
+            error.style.display = 'block';
+            error.innerHTML = error.innerHTML + '<li>Por Favor completa el nombre</li>';
+            e.preventDefault();
+        } else {
+            error.style.display = 'none';
+        }
+        
+    }
+    function validarCorreo(e){
+        // Valimadmos el nombre
+       if (correo.value == '' || correo.value == null){
+            // alert('Por favor ingresa un nombre');
+            error.style.display = 'block';
+            error.innerHTML = error.innerHTML + '<li>Por Favor completa el correo</li>';
+            e.preventDefault();
+        }else {
+            error.style.display = 'none';
+        }
+        
+    }
+    function validarSexo(e){
+        // Valimadmos el nombre
+       if (sexo.value == '' || sexo.value == null){
+            // alert('Por favor ingresa un nombre');
+            error.style.display = 'block';
+            error.innerHTML = error.innerHTML + '<li>Por Favor seleccionar sexo</li>';
+            e.preventDefault();
+        }else {
+            error.style.display = 'none';
+        }
+        
+    }
+    function validarTerminos(e){
+        // Valimadmos el nombre
+       if (terminos.checked == false){
+            // alert('Por favor ingresa un nombre');
+            error.style.display = 'block';
+            error.innerHTML = error.innerHTML + '<li>Por Favor aceptar terminos</li>';
+            e.preventDefault();
+        }else {
+            error.style.display = 'none';
+        }
+        
+    }
+    function validarFormulario(e){
+        error.innerHTML= '';
+        validarNombre(e);
+        validarCorreo(e);
+        validarSexo(e);
+        validarTerminos(e);
 
-
-
-
-
-
-    e.preventDefault();
-}
-
-formulario.addEventListener('submit', validar);
-
-
+    }
+    formulario.addEventListener('submit', validarFormulario);
+}())
