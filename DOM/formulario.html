@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
     <title>Formulario</title>
 </head>
 <body>
-    <form action="" name="formulario" id="formulario">
-        <input type="text" name="nombre" placeholder="nombre">
+    <div class="contenedor">
+        <form action="" name="formulario" id="formulario" class="formulario">
+            <div class="contenedor-inputs">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="email" name="correo" placeholder="Correo">
+                <div class="sexo">
+                    <input type="radio" name="sexo" id="hombre" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    
+                    <input type="radio" name="sexo" id="mujer" value="mujer">
+                    <label for="mujer">Mujer</label> 
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto Terminos y Condiciones</label>
+                </div>
+                <ul class="error">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <input type="submit" class="btn" value="registrarse">
         
-        <input type="radio" name="sexo" id="hombre">
-        <label for="hombre">Hombre</label>
-        
-        <input type="radio" name="sexo" id="mujer">
-        <label for="mujer">Mujer</label>
-        
-        <input type="checkbox" name="terminos" id="terminos">
-        <label for="terminos">Terminos</label>
-
-        <input type="submit" value="Enviar">
-
-        <script src="formulario.js"></script>
-
-
-
-
-    </form>
+                
+            </div>
+            
+    
+    
+    
+    
+        </form>
+    </div>
+    <script src="formulario.js"></script>
 </body>
 </html>

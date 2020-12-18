@@ -13,6 +13,18 @@ function validar(e){
         alert('Por favor ingresa un nombre');
 
     }
+    // Validamos los radio button
+    if (sexo[0].checked == false && sexo [1].checked == false){
+        alert('Por favor ingresa un sexo');
+    }
+
+    // Validamos los terminos y condiciones
+
+    if (!terminos.checked){
+        alert('Acepta los terminos');
+
+    }
+    
 
 
 
